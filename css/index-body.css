@@ -1,0 +1,344 @@
+/* universal */
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    /* font-family: 'Montserrat'; */
+}
+
+:root{
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6e7d6c;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+
+.titulos-presentacion-noticia{
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.titulos1-presentacion{
+    font-size: 50px;
+    color: var(--gray);
+    text-align: center;
+    font-weight: 300;
+}
+
+.titulos1-presentacion:hover{
+    cursor: default;
+}
+
+.titulos2-presentacion{
+    color: var(--gray);
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.titulos2-presentacion:hover{
+    cursor: default;
+}
+
+.img_noticia{
+    width: 100%;
+}
+
+.fecha-noticia{
+    margin-top: 20px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.titulo-noticia{
+    text-align: left;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.row{
+    margin-bottom: 20px;
+}
+
+.col-md{
+    margin-bottom: 20px;
+}
+
+.body-noticia{
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.btn-noticia{
+    padding: 15px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    background-color: var(--white);
+    font-size: 18px;
+    border: 1px solid #000000;
+}
+
+.btn-noticia:hover{
+    transition: 0.5s;
+    background: var(--gray-dark);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+
+.Section4-Tarjetas-Servicios{
+    margin: 50px;
+}
+
+.card{
+    text-align: center;
+    padding: 20px;
+}
+
+.Titulo-servicio{
+    font-size: 50px;
+    color: var(--gray);
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+.sub-titulo-servicio{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: var(--gray);
+}
+
+.img-card{
+    width: 50%;
+    margin: auto;
+}
+
+.btn:hover{
+    background-color: var(--success);
+}
+
+
+.titulo-servicios{
+    font-size: 50px;
+    color: var(--gray);
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+.container-servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.card-servicio h4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-servicios .card-servicio{
+    width: 300px;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container-servicios .card-servicio:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container-servicios .card-servicio img{
+    width: 330px;
+    height: 220px;
+}
+
+
+.container-servicios .card-servicio h4{
+    font-weight: 600;
+}
+
+.container-servicios .card-servicio p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container-servicios .card-servicio a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+/* Section contacto  */
+/* alex licona */
+.content{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.titulo-contacto{
+    font-size: 24px;
+}
+
+.li-contact-info{
+    list-style: none;
+    padding: 0;
+    color: white;
+}
+
+.li-contact-info{
+    margin-bottom: 20px;
+}
+
+label{
+    color: white;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-wrapper > * {
+    padding: 20px;
+}
+
+.contact-form {
+    background: #222222;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #d63031;
+}
+
+.contact-form form button {
+    background: #B70E21;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #5e5e5e;
+    transition: background-color 1s ease-out;
+    outline: 0;
+    cursor: pointer;
+}
+
+
+
+/* CONTACT INFO */
+.Contacto{
+    background: #222222;
+    padding: 20px;
+}
+
+.contact-info {
+    background: #000;
+    cursor: default;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+}
+
+@media(min-width: 700px) {
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+}
+
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:80%; /*Reduce este valor si el mapa fuera muy alto, por ejemplo 250px, puedes usar porcentajes, 50%*/
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* boton scroll-top */
+
+.ir-arriba {
+	display:none;
+	padding:10px;
+	background:#024959;
+	font-size:30px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+}

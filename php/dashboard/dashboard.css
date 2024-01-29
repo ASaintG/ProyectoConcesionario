@@ -1,0 +1,222 @@
+
+
+    body {
+    font-family: "Segoe UI", sans-serif;
+    font-size:100%;
+    margin:0;
+    padding:0;
+}
+
+header {
+    background:#333;
+    color:#eee;
+    width:100%;
+}
+
+input#abrir-cerrar {
+    visibility:hidden;
+    position: absolute;
+    top: -9999px;
+}
+
+
+label[for="abrir-cerrar"] {
+    cursor:pointer;
+    padding: 1rem;
+    background-color:#333;
+    color:#fff;
+    display:inline-block;
+    width:100%;
+
+}
+
+.cerrar {
+    display:none;
+}
+
+#sidebar {
+    width:0;
+}
+
+#contenido {
+    margin-left:0;
+}
+
+input#abrir-cerrar:checked ~ #sidebar {
+    width:300px;
+}
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"], input#abrir-cerrar:checked ~ #contenido {
+    margin-left:300px;
+    transition: margin-left .4s;
+}
+
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] .cerrar {
+    display:inline;
+}
+
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
+    display:none;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #00324b;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding: 1rem 0;
+    box-sizing:border-box;
+}
+
+.sidebar .boton-cerrar {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    display: block;
+    padding: 0;
+    line-height: 1.5rem;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    
+}
+
+.sidebar ul, .sidebar li{
+    margin:0;
+    padding:0;
+    list-style:none inside;
+}
+
+.sidebar ul {
+    margin: 4rem auto;
+    display: block;
+    width: 80%;
+    min-width:200px;
+}
+
+.sidebar a {
+    display: block;
+    font-size: 120%;
+    color: #eee;
+    text-decoration: none;
+    
+}
+
+.sidebar a:hover{
+    color:#fff;
+    background-color: #f90;
+
+}
+
+h1 {
+    color:#f90;
+    font-size:180%;
+    font-weight:normal;
+  
+}
+#contenido {
+    transition: margin-left .4s;
+    padding: 1rem;
+}
+
+.abrir-cerrar {
+    color: #2E88C7;
+    font-size:1rem;   
+}
+#myChart{
+    position: relative; 
+    height:200px; 
+    width:400px;
+}
+.productos_en_stock{
+    float: left;
+    height: 30vh;
+    width: 60vw;
+    align-items: center;
+}
+.titulos_graficos{
+    text-align: center;
+    color: black;
+}
+
+/*
+
+*/
+
+.mostrar_lista h1{
+font-size: 25px;
+display: inline-block;
+color: black;
+
+}
+table{
+    border-collapse: collapse;
+    font-size: 12pt;
+    font-family: serif;
+    width: 100%;
+    margin-bottom: 30px;
+    
+}
+
+table th{
+    text-align: left;
+    padding: 10px;
+    background: rgb(35, 191, 243);
+    color: #fff;
+
+}
+
+table tr:nth-child(odd){
+background: #fff;
+
+}
+table td{
+    padding: 10px;
+color: black;
+}
+.link_edit{
+    color:#0ca4ce;
+
+}
+.link_delete{
+color:#f26b6b;
+}
+.data_delete{
+ 
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    border: solid black;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+.cancelar{
+   margin-top: 10px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(228, 21, 21);
+}
+.eliminarbac{
+    background: #a7adba;
+}
+.enviar{
+    margin-top: 10px;
+    padding-top: 10px;
+    background: rgb(83, 235, 83);
+    width: 70px;
+    height: 30px;
+    border-radius: 3px;
+    color: #000;
+}
